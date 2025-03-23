@@ -10,11 +10,14 @@ fn factorial(num: u64) -> u64 {
     // - additional variables
     // For an extra challenge, don't use:
     // - recursion
+    let range = 1..num+1;
+    range.into_iter().product()
 }
 
 fn main() {
     // You can optionally experiment here.
 }
+// let sum = a.iter().fold(0, |acc, x| acc + x);
 
 #[cfg(test)]
 mod tests {
